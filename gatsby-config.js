@@ -21,6 +21,14 @@ module.exports = {
 				path: `${__dirname}/src/images`
 			}
 		},
+		{
+			resolve: 'gatsby-source-datocms',
+			options: {
+				apiToken: 'd37d6c7c416cca56ebf5d49a57afca',
+				preview: false,
+				disableLiveReload: false,
+			},
+		},
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
 		{
