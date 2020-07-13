@@ -2,11 +2,11 @@ import React from 'react';
 
 import Layout from '../components/layout';
 
-const IndexPage = ({ data }) => (
+const ContactPage = ({ data }) => (
   <Layout>
-
+    <h1>Contact stuff!</h1>
   </Layout>
 )
 
 
-export default IndexPage
+export default ContactPage

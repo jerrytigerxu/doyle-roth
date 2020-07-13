@@ -2,11 +2,11 @@ import React from 'react';
 
 import Layout from '../components/layout';
 
-const IndexPage = ({ data }) => (
+const ExchangerPage = ({ data }) => (
   <Layout>
-
+    <h1>Aiya</h1>
   </Layout>
 )
 
 
-export default IndexPage
+export default ExchangerPage

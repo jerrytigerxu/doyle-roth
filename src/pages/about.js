@@ -2,11 +2,11 @@ import React from 'react';
 
 import Layout from '../components/layout';
 
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
-
+    <h1>About Page! Wow!</h1>
   </Layout>
 )
 
 
-export default IndexPage
+export default AboutPage
