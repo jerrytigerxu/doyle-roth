@@ -23,9 +23,11 @@ const Header = ({ siteTitle }) => (
 					</figure>*/}
 					<div className="media-content">
 						<div className="content">
-							<h1 className="is-uppercase is-size-1 has-text-white">
-								Doyle Roth
-							</h1>
+							<a href="/">
+								<h1 className="is-uppercase is-size-1 has-text-white">
+									Doyle Roth
+								</h1>
+							</a>
 							<p className="subtitle has-text-white is-size-3">
 							</p>
 						</div>
