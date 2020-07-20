@@ -1,13 +1,12 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+
 
 import './style.scss';
 
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
+
 
 const Header = ({ siteTitle }) => (
-	<section className="hero gradientBg is-fullheight-with-navbar">
+	<section className="hero gradientBg ">
 		<div className="hero-body">
 			<div className="container center">
 				<article className="media">

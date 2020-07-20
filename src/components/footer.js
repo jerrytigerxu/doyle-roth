@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaTwitter, FaGithub, FaMedium } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaFax, FaHome } from 'react-icons/fa'
+
 import { StaticQuery, graphql } from 'gatsby'
 import './style.scss'
 import Emoji from './emoji'
@@ -15,48 +16,48 @@ const Footer = () => (
             twitter
             medium
             github
+            email
+            phone
+            fax
+            address
           }
         }
       }
     `}
     render={data => (
-      <footer className='footer center has-background-light'>
+      <footer className='footer center has-background-white'>
         <div className='content has-text-centered'>
-          <p className='is-size-4'>
-            This website was handcrafted with plenty cups of{' '}
-            <Emoji emoji='☕' />
-          </p>
-          <p className='is-size-4'>
-            By Aman Mittal (@amanhimself) using{' '}
-            <a href={data.site.siteMetadata.gatsby}>Gatsby</a> +{' '}
-            <a href={data.site.siteMetadata.bulma}>Bulma</a>
-          </p>
+
           <article className='media center'>
             <span className='icon'>
-              <a href={data.site.siteMetadata.twitter}>
-                <FaTwitter size='fa-2x' color='blue' />
-              </a>
+              <FaEnvelope size='fa-2x' color='black' />
             </span>
+            &nbsp;
+              <p className='is-size-6'>{data.site.siteMetadata.email}</p>
+            &nbsp;
+
+            <span className='icon'>
+                <FaPhone size='fa-2x' color='black' />
+            </span>
+            &nbsp;
+            <p className='is-size-6'>{data.site.siteMetadata.phone}</p>
+
             &nbsp;
             <span className='icon'>
-              <a href={data.site.siteMetadata.github}>
-                <FaGithub size='fa-2x' color='black' />
-              </a>
+                <FaFax size='fa-2x' color='black' />
             </span>
+            &nbsp;
+            <p className='is-size-6'>{data.site.siteMetadata.fax}</p>
+
             &nbsp;
             <span className='icon'>
-              <a href={data.site.siteMetadata.medium}>
-                <FaMedium size='fa-2x' color='green' />
-              </a>
+                <FaHome size='fa-2x' color='black' />
             </span>
             &nbsp;
+            <p className='is-size-6'>{data.site.siteMetadata.address}</p>
           </article>
           &nbsp;
-          <p className='is-size-5'>
-            You can also back or support this project for me to keep it updated
-            by{' '}
-            <a href='https://www.paypal.me/amanhimself/2'>Buying Me a Coffee</a>
-          </p>
+
         </div>
       </footer>
     )}

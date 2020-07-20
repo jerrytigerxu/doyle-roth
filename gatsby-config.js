@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: 'Doyle Roth',
+		title: 'Doyle & Roth',
 		author: 'Jere Xu',
 		imageUrl: 'https://i.imgur.com/Vz81GEl.png',
 		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
@@ -10,7 +10,11 @@ module.exports = {
 		medium: 'https://medium.com/@amanhimself',
 		gatsby: 'https://www.gatsbyjs.org/',
 		bulma: 'https://bulma.io/',
-		siteUrl: `https://www.example.com`
+		siteUrl: `https://www.example.com`,
+		address: '39 Broadway Suite 710, New York NY 10006',
+		phone: '212-269-7840',
+		fax: '212-248-4780',
+		email: 'info@doyleroth.com'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
