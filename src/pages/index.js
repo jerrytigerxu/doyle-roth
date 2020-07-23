@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Img from 'gatsby-image'
+
 import Layout from '../components/layout';
 
 const IndexPage = ({ data }) => (
