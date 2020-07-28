@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Img from 'gatsby-image'
 import Layout from '../components/layout';
 
 const CapPage = ({ data }) => {
@@ -60,10 +60,16 @@ const CapPage = ({ data }) => {
 
 
 
-
-
                   </div>
+
                 </div>
+
+                {data.allFile.edges.map(image => (
+                  <Img
+                    fixed={image.node.childImageSharp.fixed}
+                  />
+                ))}
+
               </section>
           </div>
       </Layout>
@@ -72,3 +78,25 @@ const CapPage = ({ data }) => {
 
 
 export default CapPage
+
+
+
+export const query = graphql`
+  query {
+    allFile(filter: {relativeDirectory: {eq: "Capability"}}) {
+    edges {
+      node {
+        id
+        absolutePath
+        relativeDirectory
+        childImageSharp {
+          fixed(width: 250, height: 250) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  }
+}
+
+`

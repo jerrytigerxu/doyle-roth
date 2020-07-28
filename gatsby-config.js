@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
 	siteMetadata: {
 		title: 'Doyle & Roth',
@@ -26,6 +28,13 @@ module.exports = {
 			}
 		},
 		'gatsby-transformer-sharp',
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'inventory',
+				path: `${__dirname}/src/images/Inventory`
+			}
+		},
 		'gatsby-plugin-sharp',
 		{
 			resolve: `gatsby-plugin-manifest`,
