@@ -1,5 +1,5 @@
 import React from 'react';
-
+import drLogo from '../images/logo.png';
 
 import './style.scss';
 
@@ -10,16 +10,11 @@ const Header = ({ siteTitle }) => (
 		<div className="hero-body">
 			<div className="container center">
 				<article className="media">
-					{/*<figure className="is-left">
+					<figure className="is-left">
 						<span className="icon is-large ">
-							<img src={gatsbyLogo} alt="gatsby-logo" />
+							<img src={drLogo} alt="doyleroth-logo" />
 						</span>
 					</figure>
-					<figure className="is-left">
-						<span className="icon is-large">
-							<img src={bulmaLogo} alt="bulma-logo" />
-						</span>
-					</figure>*/}
 					<div className="media-content">
 						<div className="content">
 							<a href="/">
