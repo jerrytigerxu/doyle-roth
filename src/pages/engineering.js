@@ -2,6 +2,11 @@ import React from 'react';
 
 import Layout from '../components/layout';
 
+import one from '../images/Engineering/214_Fotolia_112503_X.jpg'
+import two from '../images/Engineering/224_Tubehsheet_Edited.png'
+import three from '../images/Engineering/234_Fotolia_1804440_X.jpg'
+import four from '../images/Engineering/730_Overlay_Exchanger.png'
+
 const EngPage = ({ data }) => (
   <Layout>
       <div>
@@ -13,7 +18,8 @@ const EngPage = ({ data }) => (
                   <div className="media-content">
                     <div className="content">
                       <h1 className="title is-size-4">Thermal Rating</h1>
-                      <p className="subtitle is-size-5">[More images needed]</p>
+
+                      <img src={one}  />
                       <p className="subtitle is-size-5">All Thermal design is performed by our in-house Process Engineers, utilizing Aspen Tech Thermal Rating software and custom developed programming.  We operate with the understanding that correct and thorough input is required for accurate results. Our engineers dictate the design based on experience and knowledge of thermal properties, using the software only as tool.
                       </p>
                       <p className="subtitle is-size-5">We have the capability to design all major industrial shell and tube heat exchanger equipment, including single phase, multi phase, condensers, evaporators and specialty units.  See our <a href="/capability">Capability page</a> for a detailed list of services.
@@ -34,6 +40,7 @@ const EngPage = ({ data }) => (
                   <div className="media-content">
                     <div className="content">
                       <h1 className="title is-size-4">Mechanical Design</h1>
+                      <img src={two}  />
                       <p className="subtitle is-size-5">
                         Our engineers are experts in the design and mechanical optimization of heat transfer equipment.  We have a thorough understanding of all applicable codes and design references including ASME, TEMA, API 660, PIP and are well versed in the interpretation of customer specifications.
                       </p>
@@ -58,6 +65,7 @@ const EngPage = ({ data }) => (
                   <div className="media-content">
                     <div className="content">
                       <h1 className="title is-size-4">Quotation Process</h1>
+                      <img src={three}  />
                       <p className="subtitle is-size-5">
                         When we receive your request, each unit is checked for consistency with the provided Datasheet or thermally rated if required. Our engineers review all specifications in detail, assuring that all project requirements are adhered to.
                       </p>
@@ -94,8 +102,9 @@ Click here to email us your request
                   <div className="media-content">
                     <div className="content">
                       <h1 className="title is-size-4">3D Rendering Design Capability</h1>
+                      <img src={four}  />
                       <p className="subtitle is-size-5">
-                        The design and fabrication of highly complicated shell and tube heat exchangers and pressure vessels are streamlined with the use of 3D design software.  This method reduces both schedule and cost by accurately dimensioning components with challenging geometric features and verifying clearances prior to the start of fabrication.  The customer also benefits from the use of this model when creating piping plans and determining the spacial requirements of their plant. 
+                        The design and fabrication of highly complicated shell and tube heat exchangers and pressure vessels are streamlined with the use of 3D design software.  This method reduces both schedule and cost by accurately dimensioning components with challenging geometric features and verifying clearances prior to the start of fabrication.  The customer also benefits from the use of this model when creating piping plans and determining the spacial requirements of their plant.
                       </p>
                     </div>
                   </div>
