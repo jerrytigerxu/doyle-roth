@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import doyle from '../images/doyle-roth.png';
+import doyle from '../images/doyle-roth-new.png';
 
 const Navbar = class extends React.Component {
   constructor(props) {
