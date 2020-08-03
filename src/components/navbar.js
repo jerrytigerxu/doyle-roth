@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import doyle from '../images/doyle-roth.png';
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -39,6 +41,10 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
+            <figure class="image is-400x80">
+              <a href="/"><img src={doyle} alt="logo"/></a>
+            </figure>
+
 
             {/* Hamburger menu */}
             <div
@@ -55,7 +61,7 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-end has-text-centered">
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -85,15 +91,7 @@ const Navbar = class extends React.Component {
               </Link>
 
             </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              </a>
-            </div>
+
           </div>
         </div>
       </nav>
