@@ -1,18 +1,19 @@
 import React from 'react';
-import drLogo from '../images/logo.png';
+import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 
 import './style.scss';
 
 
 
-const Header = ({ siteTitle }) => (
+const Header = ({ data }) => (
 	<section className="hero gradientBg ">
 		<div className="hero-body">
 			<div className="container center">
 				<article className="media">
 					<figure className="is-left">
 						<span className="icon is-large ">
-							<img src={drLogo} alt="doyleroth-logo" />
+							<Img fixed={data.file.childImageSharp.fixed} />
 						</span>
 					</figure>
 					<div className="media-content">
@@ -33,3 +34,17 @@ const Header = ({ siteTitle }) => (
 );
 
 export default Header;
+
+
+export const query = graphql`
+  query {
+		file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/doyle-roth-new.png"}) {
+    childImageSharp {
+      fixed {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+}
+
+`
