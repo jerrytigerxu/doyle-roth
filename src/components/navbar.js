@@ -1,7 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
+import { Link, graphql } from 'gatsby'
 import doyle from '../images/doyle-roth-new.png';
+import Header from './header';
+
+
+
+
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -32,7 +36,9 @@ const Navbar = class extends React.Component {
     )
   }
 
+
   render() {
+
     return (
       <nav
         className="navbar is-transparent"
@@ -42,7 +48,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <figure class="image is-400x80">
-              <a href="/"><img src={doyle} alt="logo"/></a>
+              <a href="/"><Header /></a>
             </figure>
 
 
