@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Layout from '../components/layout';
+import Img from 'gatsby-image'
 
-import logo from '../images/Principles/172_Logo_Only_Color.jpg'
-import drill from '../images/Principles/231_Drill_TS.png'
-import delivery from '../images/Principles/188_1499C.jpg'
+import { graphql } from 'gatsby';
+
 
 const PrinciplesPage = ({ data }) => (
   <Layout>
@@ -18,7 +18,7 @@ const PrinciplesPage = ({ data }) => (
                     <div className="content">
                       <h1 className="title is-size-4">Service</h1>
 
-                      <img src={logo} alt="doyleroth-logo" />
+                      <Img fixed={data.logo.childImageSharp.fixed} alt="doyleroth-logo"/>
 
                       <p className="subtitle is-size-5">
                       We take a client focused approach to all of our services. Your needs are always at the forefront of our design and manufacturing process. Our engineers will work closely with you to make sure all project requirements are incorporated into the design as efficiently as possible.
@@ -38,7 +38,7 @@ const PrinciplesPage = ({ data }) => (
                   <div className="media-content">
                     <div className="content">
                       <h1 className="title is-size-4">Quality</h1>
-                      <img src={drill} alt="drill" />
+                      <Img fixed={data.drill.childImageSharp.fixed} alt="drill"/>
                       <p className="subtitle is-size-5">
                         Quality begins with efficient plant management and proven procedures.  Our 85 years of experience fabricating shell and tube heat exchangers has been documented in our Quality Manual which governs all aspects of our process from component purchase through final inspection.
                       </p>
@@ -56,7 +56,7 @@ const PrinciplesPage = ({ data }) => (
                   <div className="media-content">
                     <div className="content">
                       <h1 className="title is-size-4">Delivery</h1>
-                      <img src={delivery} alt="delivery" />
+                      <Img fixed={data.delivery.childImageSharp.fixed} alt="delivery"/>
                       <p className="subtitle is-size-5">
                         Doyle & Roth offers complete "in-house" capability for the fabrication of pressure vessels and tubular heat transfer equipment.
                       </p>
@@ -82,3 +82,33 @@ const PrinciplesPage = ({ data }) => (
 
 
 export default PrinciplesPage
+
+
+export const query = graphql`
+  query {
+		logo: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/Principles/172_Logo_Only_Color.jpg"}) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+
+    drill: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/Principles/231_Drill_TS.png"}) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+
+    delivery: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/Principles/188_1499C.jpg"}) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+}
+
+`

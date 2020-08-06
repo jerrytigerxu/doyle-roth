@@ -21,7 +21,7 @@ const FabPage = ({ data }) => (
                     <div className="media-content">
                       <div className="content">
                         <h1 className="title is-size-4">Welding</h1>
-                        <img src={welding}  />
+                        <img src={welding}  alt="weld"/>
 
 
                       </div>
@@ -36,7 +36,7 @@ const FabPage = ({ data }) => (
                     <div className="media-content">
                       <div className="content">
                         <h1 className="title is-size-4">Machining, Shearing & Rolling </h1>
-                        <img src={machining}  />
+                        <img src={machining}  alt="machine"/>
 
 
                       </div>
@@ -51,7 +51,7 @@ const FabPage = ({ data }) => (
                     <div className="media-content">
                       <div className="content">
                         <h1 className="title is-size-4">Drilling</h1>
-                        <img src={drilling}  />
+                        <img src={drilling}  alt="drill"/>
 
 
 
@@ -68,7 +68,7 @@ const FabPage = ({ data }) => (
                     <div className="media-content">
                       <div className="content">
                         <h1 className="title is-size-4">Tube Bending</h1>
-                        <img src={tube}  />
+                        <img src={tube}  alt="tube"/>
 
                       </div>
                     </div>
@@ -80,7 +80,7 @@ const FabPage = ({ data }) => (
                     <div className="media-content">
                       <div className="content">
                         <h1 className="title is-size-4">Assembly</h1>
-                        <img src={last}  />
+                        <img src={last}  alt="assembly"/>
 
                       </div>
                     </div>
@@ -92,7 +92,7 @@ const FabPage = ({ data }) => (
                     <div className="media-content">
                       <div className="content">
                         <h1 className="title is-size-4">Inventory</h1>
-                        <img src={tubes}  />
+                        <img src={tubes}  alt="inventory"/>
 
                       </div>
                     </div>
@@ -104,7 +104,7 @@ const FabPage = ({ data }) => (
                     <div className="media-content">
                       <div className="content">
                         <h1 className="title is-size-4">Facility</h1>
-                        <img src={shop}  />
+                        <img src={shop}  alt="facility"/>
 
                       </div>
                     </div>

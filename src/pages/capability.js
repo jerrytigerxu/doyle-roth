@@ -66,7 +66,7 @@ const CapPage = ({ data }) => {
 
                 {data.allFile.edges.map(image => (
                   <Img
-                    fixed={image.node.childImageSharp.fixed}
+                    fixed={image.node.childImageSharp.fixed} alt="stuff"
                   />
                 ))}
 
