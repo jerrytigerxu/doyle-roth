@@ -62,7 +62,7 @@ export default AboutPage
 
 export const query = graphql`
   query {
-		ny: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/About Us/730_2017_NY-Website.jpg"}) {
+		ny: file(relativePath: {eq: "About Us/730_2017_NY-Website.jpg"}) {
       childImageSharp {
         fixed(width: 650) {
           ...GatsbyImageSharpFixed
@@ -70,7 +70,7 @@ export const query = graphql`
       }
     }
 
-    penn: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/About Us/730_2017_Shop-Website.jpg"}) {
+    penn: file(relativePath: {eq: "About Us/730_2017_Shop-Website.jpg"}) {
       childImageSharp {
         fixed(width:650) {
           ...GatsbyImageSharpFixed

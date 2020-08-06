@@ -86,7 +86,7 @@ export default PrinciplesPage
 
 export const query = graphql`
   query {
-		logo: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/Principles/172_Logo_Only_Color.jpg"}) {
+		logo: file(relativePath: {eq: "Principles/172_Logo_Only_Color.jpg"}) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed
@@ -94,7 +94,7 @@ export const query = graphql`
       }
     }
 
-    drill: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/Principles/231_Drill_TS.png"}) {
+    drill: file(relativePath: {eq: "Principles/231_Drill_TS.png"}) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed
@@ -102,7 +102,7 @@ export const query = graphql`
       }
     }
 
-    delivery: file(absolutePath: {eq: "/home/jeretigerxu/Documents/Hacker Stuff/freelance-projects/doyle-roth/src/images/Principles/188_1499C.jpg"}) {
+    delivery: file(relativePath: {eq: "Principles/188_1499C.jpg"}) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed
