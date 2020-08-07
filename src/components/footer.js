@@ -3,7 +3,6 @@ import { FaEnvelope, FaPhone, FaFax, FaHome } from 'react-icons/fa'
 
 import { StaticQuery, graphql } from 'gatsby'
 import './style.scss'
-import Emoji from './emoji'
 
 const Footer = () => (
   <StaticQuery

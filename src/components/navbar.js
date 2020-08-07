@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import doyle from '../images/doyle-roth-new.png';
+import { Link } from 'gatsby'
 import Header from './header';
 
 

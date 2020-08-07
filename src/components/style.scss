@@ -15,6 +15,15 @@
 	background: linear-gradient(to right, $primary-color, $secondary-color);
 }
 
+
+
+
+.gallery-class {
+	border-radius: 15%;
+	border: 1px black;
+	margin: 10px;
+}
+
 .center {
 	display: flex;
 	justify-content: center;
