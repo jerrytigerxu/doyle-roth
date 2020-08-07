@@ -1,10 +1,8 @@
 import React from 'react';
-
 import Layout from '../components/layout';
 import Img from 'gatsby-image'
 
 import { graphql } from 'gatsby';
-
 
 const PrinciplesPage = ({ data }) => (
   <Layout>
@@ -17,9 +15,7 @@ const PrinciplesPage = ({ data }) => (
                   <div className="media-content">
                     <div className="content">
                       <h1 className="title is-size-4">Service</h1>
-
                       <Img fixed={data.logo.childImageSharp.fixed} alt="doyleroth-logo"/>
-
                       <p className="subtitle is-size-5">
                       We take a client focused approach to all of our services. Your needs are always at the forefront of our design and manufacturing process. Our engineers will work closely with you to make sure all project requirements are incorporated into the design as efficiently as possible.
                       </p>
@@ -30,8 +26,6 @@ const PrinciplesPage = ({ data }) => (
                   </div>
                 </article>
               </div>
-
-
 
               <div className="column is-one-third">
                 <article className="media">
@@ -49,7 +43,6 @@ const PrinciplesPage = ({ data }) => (
                   </div>
                 </article>
               </div>
-
 
               <div className="column is-one-third">
                 <article className="media">
@@ -70,9 +63,6 @@ const PrinciplesPage = ({ data }) => (
                   </div>
                 </article>
               </div>
-
-
-
             </div>
           </div>
         </section>

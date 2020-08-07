@@ -6,18 +6,6 @@ import Img from 'gatsby-image'
 
 import { graphql } from 'gatsby';
 
-import machining from '../images/Fabrication/240_Machining.jpeg'
-import drilling from '../images/Fabrication/350_Drilling.jpeg'
-import tube from '../images/Fabrication/350_Tube_Bundle.jpg'
-import shop from '../images/Fabrication/350_Shop_Photo.jpeg'
-import tubes from '../images/Fabrication/350_tubes_B.jpg'
-import welding from '../images/Fabrication/350_Welding.jpeg'
-import last from '../images/Fabrication/350_IMG_5886.jpeg'
-
-
-
-
-
 export const query = graphql`
   query {
 		machining: file(relativePath: {eq: "Fabrication/240_Machining.jpeg"}) {
@@ -91,8 +79,6 @@ const FabPage = ({ data }) => (
                       <div className="content">
                         <h1 className="title is-size-4">Welding</h1>
                         <Img fixed={data.welding.childImageSharp.fixed} alt="weld"/>
-
-
                       </div>
                     </div>
                   </article>
@@ -106,8 +92,6 @@ const FabPage = ({ data }) => (
                       <div className="content">
                         <h1 className="title is-size-4">Machining, Shearing & Rolling </h1>
                         <Img fixed={data.machining.childImageSharp.fixed} alt="machine"/>
-
-
                       </div>
                     </div>
                   </article>
@@ -121,11 +105,6 @@ const FabPage = ({ data }) => (
                       <div className="content">
                         <h1 className="title is-size-4">Drilling</h1>
                         <Img fixed={data.drilling.childImageSharp.fixed} alt="drill"/>
-
-
-
-
-
                       </div>
                     </div>
                   </article>
@@ -138,7 +117,6 @@ const FabPage = ({ data }) => (
                       <div className="content">
                         <h1 className="title is-size-4">Tube Bending</h1>
                         <Img fixed={data.tube.childImageSharp.fixed} alt="tube"/>
-
                       </div>
                     </div>
                   </article>
@@ -150,7 +128,6 @@ const FabPage = ({ data }) => (
                       <div className="content">
                         <h1 className="title is-size-4">Assembly</h1>
                         <Img fixed={data.last.childImageSharp.fixed} alt="assembly"/>
-
                       </div>
                     </div>
                   </article>
@@ -162,7 +139,6 @@ const FabPage = ({ data }) => (
                       <div className="content">
                         <h1 className="title is-size-4">Inventory</h1>
                         <Img fixed={data.tubes.childImageSharp.fixed} alt="inventory"/>
-
                       </div>
                     </div>
                   </article>

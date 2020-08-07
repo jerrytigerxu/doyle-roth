@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from 'gatsby-image'
 import Layout from '../components/layout';
+import Masonry from 'react-masonry-component';
 
 const CapPage = ({ data }) => {
 
@@ -13,6 +14,14 @@ const CapPage = ({ data }) => {
   const expertiseList = expertise.map((item) =>
     <li>{item}</li>
   );
+
+  const elements = data.allFile.edges.map(function(image) {
+    return  (
+        <Img className="gallery-class"
+          fixed={image.node.childImageSharp.fixed} alt="photo"
+        />
+    );
+  });
 
   return (
       <Layout>
@@ -64,11 +73,12 @@ const CapPage = ({ data }) => {
 
                 </div>
 
-                {data.allFile.edges.map(image => (
-                  <Img
-                    fixed={image.node.childImageSharp.fixed} alt="stuff"
-                  />
-                ))}
+                <Masonry
+                  className={'gallery-class'}
+                >
+                  {elements}
+                </Masonry>
+
 
               </section>
           </div>

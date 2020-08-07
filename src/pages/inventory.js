@@ -20,8 +20,6 @@ const InvPage = ({ data }) => {
 
     return (
       <Layout>
-
-
       <div>
         <section className="section">
           <div className="container">
@@ -40,29 +38,17 @@ const InvPage = ({ data }) => {
           </div>
         </section>
       </div>
-
         <Masonry
           className={'gallery-class'}
         >
           {elements}
         </Masonry>
-
-      {/*  {data.allFile.edges.map(image => (
-          <Img
-            fixed={image.node.childImageSharp.fixed} alt="photo"
-          />
-        ))} */}
       </Layout>
-
     );
-
-
 }
 
 
 export default InvPage
-
-
 
 export const query = graphql`
   query {
