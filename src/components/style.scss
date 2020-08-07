@@ -15,6 +15,10 @@
 	background: linear-gradient(to right, $primary-color, $secondary-color);
 }
 
+.leaflet-container {
+  height: 1000px;
+  width: 40%;
+}
 
 
 
@@ -24,7 +28,7 @@
 	margin: 10px;
 }
 
-.center {
+.centerClass {
 	display: flex;
 	justify-content: center;
 	align-items: center;

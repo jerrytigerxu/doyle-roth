@@ -24,10 +24,10 @@ const Footer = () => (
       }
     `}
     render={data => (
-      <footer className='footer center has-background-white'>
+      <footer className='footer centerClass has-background-white'>
         <div className='content has-text-centered'>
 
-          <article className='media center'>
+          <article className='media centerClass'>
             <span className='icon'>
               <FaEnvelope size='fa-2x' color='black' />
             </span>
