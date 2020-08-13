@@ -16,7 +16,7 @@ module.exports = {
 		address: '39 Broadway Suite 710, New York NY 10006',
 		phone: '212-269-7840',
 		fax: '212-248-4780',
-		email: 'info@doyleroth.com'
+		email: 'info@doyleroth.com',
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
