@@ -2,6 +2,24 @@ import React from 'react';
 
 import Layout from '../components/layout';
 
+import Img from 'gatsby-image'
+
+import { graphql } from 'gatsby';
+
+
+export const query = graphql`
+  query {
+		intro: file(relativePath: {eq: "529_Full_Exchanger_Edited_with_Text.png"}) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+}
+
+`
+
 const IndexPage = ({ data }) => (
   <Layout>
         <div>
@@ -16,6 +34,10 @@ const IndexPage = ({ data }) => (
                         <p className="subtitle is-size-5">
                           We are experts in the design & fabrication of shell and tube heat exchangers and pressure vessels.  Our engineers have the capability to provide complete Thermal design and Mechanical optimization.  At Doyle & Roth, we take pride in providing superior customer service while maintaining competitive pricing and exceptional quality.
                         </p>
+                        <h4>
+                        Fabricating Heat Transfer Equipment for over 85 Years
+                        </h4>
+                        <Img fixed={data.intro.childImageSharp.fixed} alt="intro"/>
                       </div>
                     </div>
                   </article>
