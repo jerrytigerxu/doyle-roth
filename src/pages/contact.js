@@ -8,7 +8,7 @@ const ContactPage = ({ data }) => {
 
   return (
         <Layout>
-          <ContactForm action="https://wwww.flexyform.com/f/d5aadbc542092fef05cd63b90a397b70cae3e56f"></ContactForm>
+          <ContactForm action="https://www.flexyform.com/f/d5aadbc542092fef05cd63b90a397b70cae3e56f"></ContactForm>
           <Footer />
         </Layout>
 
