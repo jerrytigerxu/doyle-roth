@@ -5,9 +5,12 @@ import Masonry from 'react-masonry-component';
 
 import Layout from '../components/layout';
 
+
 import '../components/style.scss';
 
 const InvPage = ({ data }) => {
+
+
 
     const elements = data.allFile.edges.map(function(image) {
       return  (
@@ -16,7 +19,6 @@ const InvPage = ({ data }) => {
           />
       );
     });
-
 
     return (
       <Layout>

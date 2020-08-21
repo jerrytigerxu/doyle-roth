@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => (
                       <div className="content">
                         <h1 className="title is-size-4">News</h1>
                         <p className="subtitle is-size-5">
-                          <a class="twitter-timeline" href="https://twitter.com/DoyleRothMfg?ref_src=twsrc%5Etfw">Tweets by DoyleRothMfg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                          <a class="twitter-timeline" href="https://twitter.com/DoyleRothMfg?ref_src=twsrc%5Etfw">Tweets by DoyleRothMfg</a> <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </p>
                       </div>
                     </div>
