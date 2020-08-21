@@ -3,6 +3,11 @@ import React from 'react';
 
 import Layout from '../../components/layout';
 
+import zero from "../../images/Exchanger/U Four Sq/0.png";
+import one from "../../images/Exchanger/U Four Sq/1.png";
+import two from "../../images/Exchanger/U Four Sq/2.png";
+import three from "../../images/Exchanger/U Four Sq/3.png";
+
 
 
 const Exchanger = ({ siteTitle }) => (
@@ -53,14 +58,28 @@ const Exchanger = ({ siteTitle }) => (
                   <h3 className="subtitle is-size-5">
                     Or download our catalogs:
                   </h3>
-                  <a href="./images/Type_F_Fixed_Tube_Sheet.pdf" download="Type_F_Fixed_Tube_Sheet.pdf">Type F</a>
-                  <a href="./images/Type_H_Removable_Bundle_U_Tube.pdf" download="Type_H_Removable_Bundle_U_Tube.pdf">Type H</a>
+                  <p><a href="./images/Type_F_Fixed_Tube_Sheet.pdf" download="Type_F_Fixed_Tube_Sheet.pdf">Fixed Tubesheet</a></p>
+                  <p><a href="./images/Type_H_Removable_Bundle_U_Tube.pdf" download="Type_H_Removable_Bundle_U_Tube.pdf">"U" Tube</a></p>
 
                 </div>
               </div>
             </article>
           </div>
 
+
+          <div className="column is-full">
+            <article className="media">
+              <div className="media-content">
+                <div className="content">
+                  <img src={zero} alt="zero" />
+                  <img src={one} alt="one" />
+                  <img src={two} alt="two" />
+                  <img src={three} alt="three" />
+
+                </div>
+              </div>
+            </article>
+          </div>
 
         </div>
       </div>
