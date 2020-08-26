@@ -31,7 +31,7 @@ const InvPage = ({ data }) => {
                     <div className="content">
                       <h1 className="title is-size-4">Inventory</h1>
                       <p className="subtitle is-size-5">
-                      More text to put in here.
+                      D & R Sample Inventory
                       </p>
                     </div>
                   </div>

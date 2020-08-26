@@ -8,6 +8,22 @@
 	//font-family: "Palanquin Dark";
 }
 
+div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: 50%;
+  //background-image: url('../images/bulma-logo.png');
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .gradientBg {
 	display: flex;
 	background: linear-gradient(to right, $primary-color, $secondary-color);
